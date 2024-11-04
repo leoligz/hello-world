@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: leoligz/hello-world
+  repository: ghcr.io/leoligz/hello-world
   tag: latest
   pullPolicy: IfNotPresent
 
