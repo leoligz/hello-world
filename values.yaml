@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/leoligz/hello-world
-  tag: main
+  tag: v0.0.1
   pullPolicy: IfNotPresent
 
 containerPort: 8080
