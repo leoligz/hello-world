@@ -7,7 +7,7 @@ spec:
   - istio-ingress/gateway
   hosts:
   - hello-world.hello-world.svc.cluster.local
-  - mydomain.com
+  - owner.duckdns.org
   http:
   - timeout: 5s
     route:
