@@ -32,4 +32,7 @@ jobs:
       run: echo "Hello ${{ inputs.name }}"
     - name: Actions for Discord
       uses: "Ilshidur/action-discord@0c4b27844ba47cb1c7bee539c8eead5284ce9fa9"
-            
+      env:
+        DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+      with:
+        args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed by ${{ inputs.name }}.'
